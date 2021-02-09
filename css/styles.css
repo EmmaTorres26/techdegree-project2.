@@ -1,0 +1,172 @@
+* { 
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.25;
+    background: #F2F4F4;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.name{
+    font-size: 1.25em;
+    margin: 0;
+    background: #F2F4F4;
+    text-decoration: none;
+}
+
+.main-nav{
+   margin-top: 5px;
+   margin-left: 0;
+    
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+.main-nav li,
+ul{
+    list-style: none;
+    background: #F2F4F4;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a{
+    color: blue;
+}
+
+h2{
+    padding:.5em;
+    background: #fff;
+    text-align: center;
+    margin: 1px 0 auto;
+}
+
+.name a,
+.main-nav a{
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+
+.main-header,
+.main-footer{
+    background: #F2F4F4;
+    padding-top: 0;
+    padding-bottom: 1px;
+    margin-bottom: 0;
+}
+
+.banner{
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 6em;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.col{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.banner2{
+    text-align: center;
+    box-shadow: 0 1px gray;
+}
+
+.contact-line{
+    padding-top: 3px;
+}
+
+@media (min-width: 768px) {
+
+    .profile{
+        width: 33%;
+        float: right;
+        margin: 10px;
+        margin-top: 0;
+    }
+    
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        background: #fff;
+    }
+
+    .wrap{
+        min-height: 100vh;
+    }
+
+    .name,
+    .col{
+        float: left;
+    }
+
+    .primary,
+    .secondary{
+        width: 50%;
+    }
+
+    .main-nav{
+        float: right;
+    }
+
+    .main-nav li{
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .profile-line{
+        font-size: 1.25em;
+        width: 100%;
+    }
+
+    #top{
+        float: right;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .container{
+        width: 80%;
+        max-width: 1150px;
+        background: #fff;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+
+    .banner,
+    .banner2,
+    .container2{
+        width: 80%;
+        max-width: 1150px;
+        background: #F2F4F4;
+        margin: 0 auto;
+    }
+
+    .primary{
+        width: 34%;
+    }
+
+    .secondary,
+    .tertiary{
+        width: 33%;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
