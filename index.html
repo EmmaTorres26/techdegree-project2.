@@ -2,92 +2,91 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <title>Responsive Layout</title>
-        <link href='https://fontts.googleapis.com/css?family=varela+round' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class="wrap">
-        <header class="main-header">
-            <div class="container2 clearfix">
-            <h1 class="name"><a href="#">Emma Torres</a></h1>
-            <ul class="main-nav">
+            <header class="main-header">
+                <div class="container2 clearfix">
+                    <h1 class="header-name">Emma Torres</h1>
+                    <ul class="main-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="banner">
+                <img class="profile" src="img/responsive-layout-profile.png" alt="profile">
+                <p class="profile-line">HI! I'm a front-end developer who loves responsive design ans css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
+            </div>
+
+            <div id="portfolio" class="container clearfix">  
+                
+                 <h2 id="top">Portfolio</h2>
+                
+                <div class="portfolios col">
+                    <img src="img/portfolio-1.png" alt="portfolio1">
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for a specific business i'm interested in.</p>
+                </div>
+
+                <div class="portfolios col">
+                    <img src="img/portfolio-4.png" alt="portfolio4">
+                    <h3>Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                </div>
+            
+                <div class="portfolios col">
+                    <img src="img/portfolio-2.png" alt="portfolio2">
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                </div>
+        
+                <div class="portfolios col">
+                    <img src="img/portfolio-5.png" alt="portfolio-5">
+                    <h3>Map of Favorite Spots</h3>
+                    <p>This project uses mappings apis to splot points for my favorite spots in the city for a do-it-youself walking tour.</p>
+                </div>
+            
+
+            
+                <div class="portfolios col">
+                    <img src="img/portfolio-3.png" alt="portfolio3">
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate throught photos.</p>
+                </div>
+
+                <div class="portfolios col">
+                    <img src="img/portfolio-6.png" alt="portfolio6">
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                </div>
+            </div>
+
+            <div id="contact">
+                    <h3>Contact</h3>
+                    <P>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</P>
+                    <p>Phone <a href="#">+1(111)555-1234</a></p>
+                    <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>     
+            </div>
+
+        </div> 
+
+        <footer class="main-footer clearfix">
+            <h1 class="name">Emma Torres</h1>
+            <a class="b-top" href="#top">Back to top</a>
+            <ul class="main-nav2">
                 <li><a href="#">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            </div>
-        </header>
-
-        <div class="banner">
-            <img class="profile" src="img/responsive-layout-profile.png" alt="profile">
-            <p class="profile-line">HI! I'm a front-end developer who loves responsive design ans css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
-        </div>
-
-            <div id="portfolio" class="container clearfix">  
-                
-                <h2>Portfolio</h2>
-
-                <div class="secondary col">
-                    <div class="portfolio1">
-                        <img src="img/portfolio-1.png" alt="portfolio1">
-                        <h3>Marketing Page</h3>
-                        <p>This project shows the front page of a marketing website meant for a specific business i'm interested in.</p>
-                    </div>
-
-                    <div class="portfolio4">
-                        <img src="img/portfolio-4.png" alt="portfolio4">
-                        <h3>Search Page</h3>
-                        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-                    </div>
-                </div>
-
-                <div class="primary col">
-                    <div class="portfolio2">
-                        <img src="img/portfolio-2.png" alt="portfolio2">
-                        <h3>Travel App</h3>
-                        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-                    </div>
-
-                    <div class="portfolio5">
-                        <img src="img/portfolio-5.png" alt="portfolio-5">
-                        <h3>Map of Favorite Spots</h3>
-                        <p>This project uses mappings apis to splot points for my favorite spots in the city for a do-it-youself walking tour.</p>
-                    </div>
-                </div>
-
-                <div class="tertiary col">
-                    <div class="portfolio3">
-                        <img src="img/portfolio-3.png" alt="portfolio3">
-                        <h3>Photo Gallery</h3>
-                        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate throught photos.</p>
-                    </div>
-
-                    <div class="portfolio6">
-                        <img src="img/portfolio-6.png" alt="portfolio6">
-                        <h3>Calculator</h3>
-                        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-                    </div>
-                </div>
-            </div>
-
-        <div id="contact" class="banner2">
-                <h3 class="contact-line">Contact</h3>
-                <P>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</P>
-                <ul>
-                    <li>Phone <a href="#">+1(111)555-1234</a></li>
-                    <li>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></li>
-                </ul>
-        </div>
-
-        <footer class="main-footer clearfix">
-            <h1 class="name"><a href="#">Emma Torres</a></h1>
-            <ul class="main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-            </ul>
+            
         </footer>
     </body>
 </html>

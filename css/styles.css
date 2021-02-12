@@ -1,94 +1,114 @@
-* { 
-    box-sizing: border-box;
+* {
+box-sizing: border-box;
+text-align: center;
 }
 
 body{
-    line-height: 1.25;
-    background: #F2F4F4;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+font-weight: 300;
+color: black;
+font-family: 'Roboto', serif;
+background: lightgray;
+padding: 15px;
+padding-bottom: 0;
+margin: 0 auto;
+
 }
 
-.name{
-    font-size: 1.25em;
-    margin: 0;
-    background: #F2F4F4;
-    text-decoration: none;
+p{
+    font-weight: 40px;
 }
 
-.main-nav{
-   margin-top: 5px;
-   margin-left: 0;
-    
+.header-name{
+    font-size: 40px;
+    font-weight: bold;
 }
 
-img {
-    max-width: 100%;
-    margin-bottom: 20px;
-    display: block;
-  }
+.wrap{
+    margin: 0 auto;
+}
 
-.main-nav li,
-ul{
+.container{
+    background: #fff;
+    margin: 5px;
+    padding: 5px;
+}
+
+li{
     list-style: none;
-    background: #F2F4F4;
-}
-
-h3{
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    margin: 2px;
+    background: lightgray;
+    font-size: 20px;
+    padding: 2px;
 }
 
 a{
+    text-decoration: none;
     color: blue;
 }
 
-h2{
-    padding:.5em;
-    background: #fff;
-    text-align: center;
-    margin: 1px 0 auto;
+img{
+    width: 100%;
 }
 
-.name a,
-.main-nav a{
-    text-align: center;
-    display: block;
-    padding: 10px 15px;
+.name{
+    float: left;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-.main-header,
-.main-footer{
-    background: #F2F4F4;
-    padding-top: 0;
-    padding-bottom: 1px;
-    margin-bottom: 0;
+.main-nav{
+padding-left: 0;
 }
 
-.banner{
-    text-align: left;
-    padding-top: 1em;
-    padding-bottom: 6em;
-    padding-right: 50px;
-    padding-left: 50px;
+.b-top{
+    float: right;
 }
 
-.col{
-    padding-right: 1em;
-    padding-left: 1em;
+.main-nav2{
+    display: none;
 }
 
-.banner2{
-    text-align: center;
-    box-shadow: 0 1px gray;
-}
+@media(min-width: 768px){
 
-.contact-line{
-    padding-top: 3px;
-}
+    body{
+        background: lightgray;
+    }
 
-@media (min-width: 768px) {
+    h2{
+        margin: 5px;
+    }
+
+    .header-name{
+        margin-bottom: 0;
+    }
+
+    .main-nav,
+    .main-nav a{
+        display: inline-flex;
+        background: lightgray;
+    }
+
+    li a{
+        background: lightgray;
+        color: black;
+        margin: 20px;
+        margin-bottom: 0;
+    }
+
+    .banner{
+        text-align: left;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .profile-line{
+        width: 80%;
+        font-size: 20px;
+    }
 
     .profile{
         width: 33%;
@@ -96,77 +116,95 @@ h2{
         margin: 10px;
         margin-top: 0;
     }
-    
-    .container{
-        width: 90%;
-        margin: 0 auto;
-        background: #fff;
-    }
 
-    .wrap{
-        min-height: 100vh;
-    }
-
-    .name,
-    .col{
+    .portfolios{
         float: left;
+        width: 45%;
     }
 
-    .primary,
-    .secondary{
-        width: 50%;
+    .col{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .b-top{
+        display: none;
+    }
+
+    .main-nav2{
+        display: inline-flex;
+        background: lightgray;
+        float: right;
+    }
+
+    .name{
+        float: left;
+        font-size: 20px;
+        padding-top: 20px;
+        margin: 0;
+    }
+}
+
+@media(min-width: 1024px){
+
+    body{
+        background: lightgray;
+    }
+
+    .main-header{
+        display: inline-block;
+        width: 100%;
     }
 
     .main-nav{
         float: right;
     }
 
-    .main-nav li{
-        display: inline-block;
-        margin-left: 15px;
+    .header-name{
+        float: left;
+        font-size: 35px;
+        padding-left: 25px;
+    }
+
+    .profile{
+        width: 30%;
+        padding: 0;
+        margin: 0;
     }
 
     .profile-line{
-        font-size: 1.25em;
-        width: 100%;
+        width: 60%;
+        font-size: 25px;
+        padding-top: 25px;
     }
 
-    #top{
+    .banner{
+        padding-bottom: 90px;
+        padding-top: 0;
+    }
+
+    .portfolios{
+        width: 28%;
         float: right;
     }
-}
 
-@media (min-width: 1024px) {
+    img{
+        max-width: 100%;
+    }
+
+    .col{
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+    }
 
     .container{
-        width: 80%;
-        max-width: 1150px;
-        background: #fff;
-        margin: 0 auto;
-        padding-top: 5px;
-    }
-
-    .banner,
-    .banner2,
-    .container2{
-        width: 80%;
-        max-width: 1150px;
-        background: #F2F4F4;
-        margin: 0 auto;
-    }
-
-    .primary{
-        width: 34%;
-    }
-
-    .secondary,
-    .tertiary{
-        width: 33%;
+        width: 90%;
+        margin: auto;
     }
 }
 
-.clearfix::after {
-    content: "";
+.clearfix::after{
+    content: " ";
     clear: both;
     display: table;
-  }
+}
