@@ -3,11 +3,16 @@ box-sizing: border-box;
 text-align: center;
 }
 
+@font-face {
+    font-family: 'Alegreya', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,400&display=swap');
+}
+
 body{
 text-align: center;
 font-weight: 300;
 color: black;
-font-family: 'Roboto', serif;
+font-family: 'Roboto', sans-serif;
 background: lightgray;
 padding: 15px;
 padding-bottom: 0;
